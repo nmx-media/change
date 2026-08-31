@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & booking — NMX</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="wordmark">NM<span>X</span></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">What we make</a></li>
+      <li><a href="roster.html">Roster</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="btn btn-primary">Start a project</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding-bottom: 40px;">
+  <div class="wrap">
+    <span class="frame-tag">System: Booking</span>
+    <h1 style="max-width: 13ch;">Let's plan the shoot.</h1>
+    <p class="lede">Tell us what you need. We'll reply within two business days with a creator match and a rough quote.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap grid-2">
+
+    <form id="booking-form">
+      <div class="form-grid">
+        <div class="field">
+          <label for="b-name">Your name</label>
+          <input id="b-name" type="text" required>
+        </div>
+        <div class="field">
+          <label for="b-email">Email</label>
+          <input id="b-email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="b-project">Project type</label>
+          <select id="b-project" required>
+            <option value="">Choose one</option>
+            <option>Content production (photo/video)</option>
+            <option>Brand collaboration</option>
+            <option>Event coverage</option>
+            <option>Monthly partnership</option>
+            <option>Joining the creator roster</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="b-date">Preferred date</label>
+          <input id="b-date" type="date">
+        </div>
+        <div class="field full">
+          <label for="b-details">Tell us about it</label>
+          <textarea id="b-details" placeholder="What's the shoot, where, and what does success look like?" required></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Send enquiry</button>
+      <p id="booking-confirm" class="fine" hidden style="margin-top:16px;"></p>
+    </form>
+
+    <div class="contact-direct">
+      <div class="pillar" style="border-top:none; padding-top:0;">
+        <h3>Prefer to write directly?</h3>
+        <p>Email us at <a href="mailto:nmx.mediaexchange@gmail.com">nmx.mediaexchange@gmail.com</a> or drop us a DM.</p>
+      </div>
+      <div class="pillar">
+        <h3>Based in</h3>
+        <p>Singapore — available islandwide for shoots and events.</p>
+      </div>
+      <div class="pillar">
+        <h3>Response time</h3>
+        <p>Two business days for enquiries, faster for time-sensitive events.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <span class="wordmark" style="font-size:20px;">NM<span>X</span></span>
+    <ul class="footer-links">
+      <li><a href="work.html">What we make</a></li>
+      <li><a href="roster.html">Roster</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <span class="fine">New Media X Change · Singapore</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

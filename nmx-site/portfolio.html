@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — NMX</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="wordmark">NM<span>X</span></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">What we make</a></li>
+      <li><a href="roster.html" class="active">Roster</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="btn btn-primary">Start a project</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="portfolio-root">
+  <section class="hero" style="padding-bottom: 40px;">
+    <div class="wrap">
+      <span class="frame-tag" id="p-frame-tag">Contact sheet</span>
+      <h1 id="p-name" style="max-width: 16ch;">Name</h1>
+      <p class="handle" id="p-role" style="font-size:16px; opacity:.85;">Role</p>
+      <p class="lede" id="p-tagline" style="margin-top:22px;">Tagline</p>
+      <div class="actions" id="p-socials"></div>
+    </div>
+  </section>
+
+  <div class="sprockets on-ink">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="gallery" id="p-gallery"></div>
+    </div>
+  </section>
+
+  <section class="on-paper">
+    <div class="wrap grid-2">
+      <div>
+        <span class="eyebrow">About <span id="p-handle">@handle</span></span>
+        <p id="p-bio" style="font-size:18px;"></p>
+      </div>
+      <div class="pillar" style="border-top:none; padding-top:0;">
+        <h3>Services</h3>
+        <div class="services" id="p-services"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="open-slot">
+        <div>
+          <h3>Want to work together?</h3>
+          <p class="fine">Send a booking enquiry straight through — we'll route it to the right person.</p>
+        </div>
+        <a href="contact.html" id="p-book" class="btn btn-primary">Book this creator</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="portfolio-not-found" class="wrap" style="padding: 96px 32px; text-align:left;" hidden>
+  <span class="eyebrow">Not found</span>
+  <h2>We couldn't find that portfolio.</h2>
+  <p class="lede" style="margin-top:16px;">The link might be out of date. Head back to the roster to find who you're after.</p>
+  <a href="roster.html" class="btn btn-primary" style="margin-top: 20px;">Back to roster</a>
+</div>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <span class="wordmark" style="font-size:20px;">NM<span>X</span></span>
+    <ul class="footer-links">
+      <li><a href="work.html">What we make</a></li>
+      <li><a href="roster.html">Roster</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <span class="fine">New Media X Change · Singapore</span>
+  </div>
+</footer>
+
+<script src="portfolios-data.js"></script>
+<script src="portfolio.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
